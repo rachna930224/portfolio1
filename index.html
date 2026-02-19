@@ -14,20 +14,25 @@
       margin: 0px;
       padding: 0px;
       box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background-color: #4dffff;
+      background-color: #513f73;
     }
 
     .navbar {
       background-color: rgb(14, 6, 2);
+      border: 2px solid #ffccff;
+      background-origin: padding-box;
+      border-radius: 10px;
     }
 
     .navbar.navbar-brand {
-      background-color: rgb(216, 139, 46);
+      background-color: rgb(214, 212, 209);
       font-weight: 600;
     }
+
 
     .navbar-nav.nav-link {
       background-color: rgb(216, 139, 46);
@@ -35,52 +40,76 @@
     }
 
     #s1 {
-      background-color:  #99ffff;
-      color: rgb(177, 177, 182);
+      background-color: #ffcccc;
+      color: rgb(73, 73, 161);
       width: auto;
-      height: 400px;
+      height: 300px;
       padding: 30px;
       text-align: justify;
-      border-radius: 10px;
+      border-radius: 15px;
+
+
     }
 
     section {
       padding: 80px 0;
     }
 
-    
+
 
     #s2 {
-      background: #99ffff;
-      margin: 20px 0;
-      border-radius: 10px;
+      background: #ffccff;
+      margin: 10px 0;
+      border-radius: 15px;
       padding: 40px;
+
 
     }
 
     #s3 {
-      background: #99ffff;
-      margin: 20px 0;
-      border-radius: 10px;
+      background: #ffccff;
+      margin: 10px 0;
+      border-radius: 15px;
       padding: 40px;
-
     }
 
     #s4 {
-      background: #99ffff;
-      margin: 20px 0;
-      border-radius: 10px;
+      background: #ffccff;
+      margin: 10px 0;
+      border-radius: 15px;
       padding: 20px;
 
-    }
-     #s5 {
-      background: #99ffff;
-      margin: 20px 0;
-      border-radius: 10px;
-      padding: 20px;
 
     }
-   
+
+    #s5 {
+      background: #b3b3ff;
+      margin: 10px 0;
+      border-radius: 15px;
+      padding: 20px;
+    }
+    
+    .skill-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-box div{
+  color: aliceblue;
+  background: #020617;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.skill-box div:hover{
+  transform: scale(1.1);
+  background: #38bdf8;
+  color: black;
+}
+
   </style>
 </head>
 
@@ -102,7 +131,7 @@
             <a class="nav-link about" href="#s2">About</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link skills" href="#s3"  aria-contact="true"aria-expanded="false">
+            <a class="nav-link skills" href="#s3" aria-contact="true" aria-expanded="false">
               skills
             </a>
           </li>
@@ -119,7 +148,7 @@
   </nav>
   <!-- nabvar end  -->
   <!-- hero section1 -->
-  <section  id="s1">
+   <section id="s1">
     <div class="row">
       <div class="col" style="padding: 70px;">
         <h1>
@@ -132,11 +161,10 @@
           <a class="nav-link projects" href="#s4" aria-contact="true">view project</a>
         </nav>
       </div>
-      <div class="col"><img src="pic.jpeg" alt="rachna" width="60%" height="300px"></div>
+      <div class="col""><img src="pic.jpeg" alt="rachna"width="60%" height="250px" ></div>
     </div>
     </div>
-    </div>
-  </section>
+    </div></section>
   <!-- section 1 end -->
   <!-- section 2 start -->
   <section id="s2">
@@ -159,22 +187,13 @@
   <section id="s3">
     <div class="container">
       <h2>My Skills</h2>
-      <div class="skill1">
-        <div class="s">HTML
-        </div>
-        <div class="sk">CSS
-
-        </div>
-        <div class="ski">JavaScript
-
-        </div>
-        <div class="skil">Python
-
-        </div>
-        <div class="skill">C
-
-        </div>
-        <div class="skills">DSA</div>
+      <div class="skill-box">
+        <div >HTML</div>
+        <div >CSS</div>
+        <div >JavaScript</div>
+        <div >Python</div>
+        <div >C</div>
+        <div >DSA</div>
       </div>
     </div>
   </section>
@@ -186,7 +205,7 @@
       <div class="row">
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="portfolio.jpg" class="card-img-top" alt="portfolio">
             <div class="card-body">
               <h5 class="card-title">portfolio website</h5>
               <p class="card-text">Personal portfolio website using HTML, CSS, JS.</p>
@@ -196,7 +215,7 @@
         </div>
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="login.jpg" class="card-img-top" alt="login">
             <div class="card-body">
               <h5 class="card-title">login page</h5>
               <p class="card-text">login page and Registration form/sign-up page</p>
@@ -206,10 +225,11 @@
         </div>
         <div class="col">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="image.png" class="card-img-top" alt="robot">
             <div class="card-body">
               <h5 class="card-title">Line follower robot</h5>
-              <p class="card-text">Line follower robot based on rgb sensor.</p>
+              <p class="card-text">A line follower robot based on an RGB sensor offers significant advantages over
+                traditional IR-based robots, primarily the ability to follow lines of different colors.</p>
               <a href="#" class="btn btn-primary">view</a>
             </div>
           </div>
@@ -218,32 +238,34 @@
     </div>
   </section>
   <!-- section 4 end -->
-   <!-- section 5 -->
-    <section id="s5">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <form>
-          <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Name</label>
-    <input type="text" name="name" id="exampleInputname" placeholder="enter your name" class="form-control" >
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="enter your email">
-  </div>
-  <div class="mb-3">
-     <label for="exampleInputEmail1" class="form-label">message</label>
-    <textarea rows="6" class="form-control" id="exampleInputmessage" placeholder="message"  >
+  <!-- section 5 -->
+  <section id="s5">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Name</label>
+          <input type="text" name="name" id="exampleInputname" placeholder="enter your name" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">message</label>
+          <textarea rows="6" class="form-control" id="exampleInputmessage" placeholder="message">
     </textarea>
-    <label for="exampleInputEmail1" class="form-label"></label>
-    <input type="text" class="form-control" id="exampleInputmessage" placeholder="send message"  >
-</form>
-</div>
-</section>
+          <label for="exampleInputEmail1" class="form-label"></label>
+          <input type="text" class="form-control" id="exampleInputmessage" placeholder="send message">
+      </form>
+    </div>
+  </section>
   <!-- section 5 end -->
-   <footer>
-    <p style="text-align: center; background-color: rgb(10, 10, 10); color: aliceblue;">© 2026 Rachna Ahirwar | portfolio</p>
-   </footer>
+  <footer>
+    <p style="text-align: center; background-color: rgb(10, 10, 10); color: aliceblue;">© 2026 Rachna Ahirwar |
+      portfolio</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
